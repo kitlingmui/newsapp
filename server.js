@@ -5,12 +5,13 @@ const cheerio = require('cheerio')
 const axios = require('axios')
 
 const path = require('path')
+var PORT = 3000;
 
 const app = express()
 
-// app.use(express.static(path.join(__dirname, 'public')))
-// app.use(bodyParser.urlencoded({extended:true}))
-// app.use(bodyParser.json())
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(bodyparser.urlencoded({extended:true}))
+app.use(bodyparser.json())
 
 axios.get("https://www.nytimes.com/section/us").then( r => {
 
@@ -32,7 +33,12 @@ axios.get("https://www.nytimes.com/section/us").then( r => {
             summary: summary
         })
     })
-
     console.log(newstitle)
     console.log(newssummary)
 })
+
+// Start the server
+app.listen(PORT, function() {
+    console.log("App running on port " + PORT);
+  });
+  
