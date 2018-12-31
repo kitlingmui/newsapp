@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongo Scraper</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script> 
+
+</head>
+<body>
+
+        <nav class="blue" role="navigation">
+                <div class="nav-wrapper container">
+                  <a id="logo-container" href="#" class="brand-logo">Mongo Scraper</a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="waves-effect waves-light green btn-large" id="saved-btn">Saved Articles</a></li>
+                    <li><a href="#" class="waves-effect waves-light red btn-large" id="scrape-btn">Scrape New Articles!</a></li>
+                  </ul>
+            
+                  <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Navbar Link</a></li>
+                  </ul>
+                  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+              </nav>
+            
+              <div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot">
+                  <div class="container">
+                    <br><br>
+                    <h1 class="header center teal-text text-lighten-2">SAVED ARTICLES</h1>
+                    <div class="row center">
+                      <h5 class="header col s12 light">YOUR SAVED ARTICLES</h5>
+                    </div>
+                    <br><br>     
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="container orange lighten-3" id="news-container">
+                  <!--   News Section   -->
+                    <div id="savedresults">
+                     
+                    </div>
+              </div> 
+</body>
+</html>
